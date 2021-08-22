@@ -39,4 +39,4 @@ jobs:
           platforms: linux/amd64
           push: true
           tags: |
-            ghcr.io/PteroForge/yolks:bot_${{ matrix.tag }}
+            ghcr.io/pteroforge/yolks:bot_${{ matrix.tag }}

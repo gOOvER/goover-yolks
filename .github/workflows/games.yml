@@ -38,4 +38,4 @@ jobs:
           platforms: linux/amd64
           push: true
           tags: |
-             ghcr.io/PteroForge/games:${{ matrix.game }}
+             ghcr.io/pteroforge/games:${{ matrix.game }}
