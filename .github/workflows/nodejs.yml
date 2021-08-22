@@ -30,7 +30,7 @@ jobs:
       - uses: docker/login-action@v1
         with:
           registry: ghcr.io
-          uusername: ${{ github.actor }}
+          username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
       - uses: docker/build-push-action@v2
         with:

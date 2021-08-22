@@ -1,4 +1,4 @@
-FROM        node:12-buster-slim
+FROM        node:12-bullseye-slim
 
 LABEL       author="Michael Parker" maintainer="parker@pterodactyl.io"
 
