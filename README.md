@@ -78,8 +78,6 @@ is tagged correctly.
     * `ghcr.io/pteroforge/yolks:nodejs_12`
   * [`node14`](/nodejs/14)
     * `ghcr.io/pteroforge/yolks:nodejs_14`
-  * [`node15`](/nodejs/15)
-    * `ghcr.io/pteroforge/yolks:nodejs_15`
   * [`node16`](/nodejs/16)
     * `ghcr.io/pteroforge/yolks:nodejs_16`
 ### [Python](/python)
