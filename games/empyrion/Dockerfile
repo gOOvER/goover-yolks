@@ -17,7 +17,7 @@ RUN         dpkg --add-architecture i386 \
     				&& echo en_US.UTF-8 UTF-8 >> /etc/locale.gen && locale-gen \
     				&& curl -s https://dl.winehq.org/wine-builds/winehq.key | apt-key add - \
     				&& apt-add-repository -y 'deb https://dl.winehq.org/wine-builds/debian/ bullseye main' \
-    				&& apt install -y wine-staging=5.7~bullseye wine-staging-i386=5.7~bullseye wine-staging-amd64=5.7~bullseye winetricks \
+    				&& apt install -y wine-staging=6.16~bullseye wine-staging-i386=6.16~bullseye wine-staging-amd64=6.16~bullseye winetricks \
     				&& rm -rf /var/lib/apt/lists/* \
 						&& useradd -m -d /home/container container
 
