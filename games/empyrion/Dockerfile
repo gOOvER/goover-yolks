@@ -17,7 +17,7 @@ RUN         dpkg --add-architecture i386 \
     				&& echo en_US.UTF-8 UTF-8 >> /etc/locale.gen && locale-gen \
     				&& wget -nc https://dl.winehq.org/wine-builds/winehq.key | apt-key add winehq.key \
     				&& apt-add-repository -y 'deb https://dl.winehq.org/wine-builds/debian/ bullseye main' \
-    				&& apt update -y
+    				&& apt update -y \
     				&& apt install --install-recommends winehq-stable winetricks \
     				&& useradd -m -d /home/container container
 
