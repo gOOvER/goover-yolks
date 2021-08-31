@@ -21,7 +21,7 @@ mkdir -p /home/container/Logs
 rm -f /tmp/.X1-lock
 Xvfb :1 -screen 0 800x600x24 &
 export WINEDLLOVERRIDES="mscoree,mshtml="
-export DISPLAY=:0
+export DISPLAY=:1
 
 # Display the command we're running in the output, and then execute it with the env
 # from the container itself.
