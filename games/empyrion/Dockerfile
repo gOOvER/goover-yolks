@@ -15,10 +15,10 @@ RUN         dpkg --add-architecture i386
 RUN					apt update \
 						&& apt upgrade -y \
 						&& apt install -y net-tools tar unzip wget curl xz-utils gnupg2 software-properties-common xvfb libc6:i386 locales
-						    				
+
 RUN  				echo en_US.UTF-8 UTF-8 >> /etc/locale.gen && locale-gen
 
-RUN    			wget -nc https://dl.winehq.org/wine-builds/winehq.key \ 
+RUN    			wget -nc https://dl.winehq.org/wine-builds/winehq.key \
     				&& apt-key add winehq.key \
     				&& apt-add-repository -y 'deb https://dl.winehq.org/wine-builds/debian/ bullseye main' \
     				&& apt update -y \
@@ -40,7 +40,7 @@ ENV 				DISPLAY_HEIGHT=768
 ENV 				DISPLAY_DEPTH=16
 ENV 				AUTO_UPDATE=1
 ENV 				XVFB=1
-RUN 				mkdir /tmp/.X11-unix && chmod 1777 /tmp/.X11-unix
+RUN 				mkdir -p /tmp/.X11-unix && chmod 1777 /tmp/.X11-unix
 
 COPY        ./entrypoint.sh /entrypoint.sh
 CMD         [ "/bin/bash", "/entrypoint.sh" ]
