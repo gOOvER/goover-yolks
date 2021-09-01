@@ -14,7 +14,7 @@ RUN         dpkg --add-architecture i386
 
 RUN					apt update \
 						&& apt upgrade -y \
-						&& apt install -y net-tools tar unzip wget curl xz-utils gnupg2 software-properties-common xvfb libsm6 libsm6:i386 libc6:i386 locales
+						&& apt install -y net-tools tar unzip wget curl xz-utils gnupg2 software-properties-common libsm6 libsm6:i386 libc6:i386 locales libfaudio0 cabextract
 
 RUN  				echo en_US.UTF-8 UTF-8 >> /etc/locale.gen && locale-gen
 
@@ -22,24 +22,27 @@ RUN    			wget -nc https://dl.winehq.org/wine-builds/winehq.key \
     				&& apt-key add winehq.key \
     				&& apt-add-repository -y 'deb https://dl.winehq.org/wine-builds/debian/ bullseye main' \
     				&& apt update -y \
-    				&& apt install --install-recommends -y winehq-stable
+    				&& apt install --install-recommends -y winehq-stable xvfb
 
 # Set up Winetricks
 RUN					wget -q -O /usr/sbin/winetricks https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks \
 						&& chmod +x /usr/sbin/winetricks
 
-RUN 				useradd -m -d /home/container container
+#RUN 				useradd -m -d /home/container container
 
-USER        container
-ENV         USER=container HOME=/home/container
-WORKDIR     /home/container
+ENV 				HOME=/home/container
 ENV 				WINEPREFIX=/home/container/.wine
-#ENV 				DISPLAY=:0
-#ENV 				DISPLAY_WIDTH=1024
-#ENV 				DISPLAY_HEIGHT=768
-#ENV 				DISPLAY_DEPTH=16
+ENV 				WINEDLLOVERRIDES="mscoree,mshtml="
+ENV 				DISPLAY=:0
+ENV 				DISPLAY_WIDTH=1024
+ENV 				DISPLAY_HEIGHT=768
+ENV 				DISPLAY_DEPTH=16
 ENV 				AUTO_UPDATE=1
 ENV 				XVFB=1
+
+USER        container
+WORKDIR     /home/container
+
 RUN 				mkdir -p /tmp/.X11-unix && chmod 777 /tmp/.X11-unix
 
 COPY        ./entrypoint.sh /entrypoint.sh
