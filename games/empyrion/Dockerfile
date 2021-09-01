@@ -28,7 +28,7 @@ RUN    			wget -nc https://dl.winehq.org/wine-builds/winehq.key \
 RUN					wget -q -O /usr/sbin/winetricks https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks \
 						&& chmod +x /usr/sbin/winetricks
 
-#RUN 				useradd -m -d /home/container container
+RUN 				useradd -m -d /home/container container
 
 ENV 				HOME=/home/container
 ENV 				WINEPREFIX=/home/container/.wine
@@ -43,7 +43,7 @@ ENV 				XVFB=1
 USER        container
 WORKDIR     /home/container
 
-RUN 				mkdir -p /tmp/.X11-unix && chmod 777 /tmp/.X11-unix
+RUN 				mkdir -p /tmp/.X11-unix && chmod 1777 /tmp/.X11-unix
 
 COPY        ./entrypoint.sh /entrypoint.sh
 CMD         [ "/bin/bash", "/entrypoint.sh" ]
