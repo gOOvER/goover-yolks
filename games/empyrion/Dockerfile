@@ -14,7 +14,7 @@ RUN         dpkg --add-architecture i386
 
 RUN					apt update \
 						&& apt upgrade -y \
-						&& apt install -y net-tools tar unzip wget curl xz-utils gnupg2 software-properties-common libsm6 libsm6:i386 libc6:i386 locales libfaudio0 cabextract
+						&& apt install -y net-tools tar unzip wget curl xz-utils gnupg2 software-properties-common libsm6 libsm6:i386 libc6:i386 locales libfaudio0 cabextract iproute2
 
 RUN  				echo en_US.UTF-8 UTF-8 >> /etc/locale.gen && locale-gen
 
@@ -39,6 +39,7 @@ ENV 				DISPLAY_HEIGHT=768
 ENV 				DISPLAY_DEPTH=16
 ENV 				AUTO_UPDATE=1
 ENV 				XVFB=1
+ENV					WINETRICKS_RUN=mono
 
 USER        container
 WORKDIR     /home/container
