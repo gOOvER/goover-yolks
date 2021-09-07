@@ -7,7 +7,7 @@ RUN         apt update \
             && useradd -m -d /home/container container
 
 RUN         npm install -g npm@latest
-RUN         npm install better-sqlite3 --save
+RUN         npm install better-sqlite3
 
 USER        container
 ENV         USER=container HOME=/home/container
