@@ -6,6 +6,9 @@ RUN         apt update \
             && apt -y install ffmpeg iproute2 git sqlite3 libsqlite3-dev python3 python3-dev ca-certificates dnsutils tzdata zip \
             && useradd -m -d /home/container container
 
+RUN         npm install -g npm@latest
+RUN         npm install better-sqlite3 --save
+
 USER        container
 ENV         USER=container HOME=/home/container
 WORKDIR     /home/container
