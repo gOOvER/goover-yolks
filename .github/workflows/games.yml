@@ -18,7 +18,6 @@ jobs:
       matrix:
         game:
           - arma3
-          - empyrion
           - fivem
           - source
     steps:
