@@ -11,7 +11,7 @@ on:
       - voice/**
 jobs:
   push:
-    name: "yolks:voice:${{ matrix.game }}"
+    name: "yolks:voice_${{ matrix.game }}"
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
