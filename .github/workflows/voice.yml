@@ -16,7 +16,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        voice:
+        tag:
           - teaspeak
     steps:
       - uses: actions/checkout@v2
