@@ -33,7 +33,7 @@ RUN       apt update \
           &&   apt upgrade -y
 
 ##    install dependencies
-RUN   apt install -y ffmpeg curl python3 python3-pip
+RUN   apt install -y ffmpeg curl python3
 
 COPY  ./entrypoint.sh /entrypoint.sh
 CMD   ["/bin/bash", "/entrypoint.sh"]
