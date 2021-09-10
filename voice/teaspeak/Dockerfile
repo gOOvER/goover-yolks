@@ -40,5 +40,11 @@ RUN   apt install -y ffmpeg curl python3 iproute2
 RUN   curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
 RUN   chmod a+rx /usr/local/bin/youtube-dl
 
+RUN   useradd -m -d /home/container container
+
+USER   container
+ENV    USER=container HOME=/home/container
+WORKDIR /home/container
+
 COPY  ./entrypoint.sh /entrypoint.sh
 CMD   ["/bin/bash", "/entrypoint.sh"]
