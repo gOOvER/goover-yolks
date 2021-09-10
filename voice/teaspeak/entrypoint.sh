@@ -15,8 +15,13 @@ cd /home/container || exit 1
 PARSED=$(echo "${STARTUP}" | sed -e 's/{{/${/g' -e 's/}}/}/g' | eval echo "$(cat -)")
 
 # Install latest youtube-dl
+echo "Downloading latest youtube.dl...."
 curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
 chmod a+rx /usr/local/bin/youtube-dl
+
+echo "Installed youtube-dl Version:"
+/usr/local/bin/youtube-dl --version
+/usr/local/bin/youtube-dl --update
 
 # Display the command we're running in the output, and then execute it with the env
 # from the container itself.
