@@ -40,6 +40,8 @@ RUN   apt install -y ffmpeg curl python3 iproute2 libjemalloc2
 RUN   curl -L https://yt-dl.org/downloads/latest/youtube-dl -o /usr/local/bin/youtube-dl
 RUN   chmod a+rx /usr/local/bin/youtube-dl
 
+RUN   update-alternatives --install  /usr/bin/python python /usr/bin/python3 1000
+
 RUN   useradd -m -d /home/container container
 
 USER   container

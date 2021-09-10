@@ -14,7 +14,6 @@ echo "installed youtube-dl Version:"
 echo "check for updates:"
 /usr/local/bin/youtube-dl --update
 
-
 # Convert all of the "{{VARIABLE}}" parts of the command into the expected shell
 # variable format of "${VARIABLE}" before evaluating the string and automatically
 # replacing the values.
