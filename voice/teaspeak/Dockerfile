@@ -19,6 +19,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 #
+
 FROM      --platform=$BUILDPLATFORM debian:stable-slim
 
 LABEL     author="Torsten Widmann" maintainer="info@goover.de"
