@@ -11,7 +11,7 @@ on:
       - voice/**
 jobs:
   push:
-    name: "yolks:voice_${{ matrix.game }}"
+    name: "yolks:voice_${{ matrix.tag }}"
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -31,9 +31,9 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
       - uses: docker/build-push-action@v2
         with:
-          context: ./voice/${{ matrix.game }}
-          file: ./voice/${{ matrix.game }}/Dockerfile
+          context: ./voice/${{ matrix.tag }}
+          file: ./voice/${{ matrix.tag }}/Dockerfile
           platforms: linux/amd64
           push: true
           tags: |
-             ghcr.io/pteroforge/yolks:voice_${{ matrix.game }}
+             ghcr.io/pteroforge/yolks:voice_${{ matrix.tag }}
