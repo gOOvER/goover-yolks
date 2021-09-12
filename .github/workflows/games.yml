@@ -20,6 +20,7 @@ jobs:
           - arma3
           - fivem
           - source
+          - ubuntu_source
     steps:
       - uses: actions/checkout@v2
       - uses: docker/setup-buildx-action@v1

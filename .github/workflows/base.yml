@@ -20,7 +20,8 @@ jobs:
           - alpine
           - debian10
           - debian11
-          - ubuntu
+          - ubuntu1804
+          - ubuntu2004
     steps:
       - uses: actions/checkout@v2
       - uses: docker/setup-buildx-action@v1
