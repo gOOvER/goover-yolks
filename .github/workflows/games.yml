@@ -20,6 +20,7 @@ jobs:
           - arma3
           - fivem
           - source
+          - source_debian10
           - ubuntu_source
     steps:
       - uses: actions/checkout@v2

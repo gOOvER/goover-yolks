@@ -61,7 +61,9 @@ is tagged correctly.
   * [`fivem`](/games/fivem)
 	* `ghcr.io/pteroforge/games:fivem`
   * [`source`](/games/source)
-	* `ghcr.io/pteroforge/games:source`
+  * `ghcr.io/pteroforge/games:source`
+  * [`source`](/games/source_debian10)
+	* `ghcr.io/pteroforge/games:source_debian10` 
   * [`source`](/games/ubuntu_source)
 	* `ghcr.io/pteroforge/games:ubuntu_source`   
 ### [Golang](/go)
