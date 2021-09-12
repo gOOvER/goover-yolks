@@ -32,8 +32,10 @@ is tagged correctly.
   * `ghcr.io/pteroforge/yolks:debian10`
 * [debian11](/oses/debian11)
   * `ghcr.io/pteroforge/yolks:debian11`  
-* [ubuntu](/oses/ubuntu)
-  * `ghcr.io/pteroforge/yolks:ubuntu`  
+* [ubuntu](/oses/ubuntu1804)
+  * `ghcr.io/pteroforge/yolks:ubuntu1804`
+* [ubuntu](/oses/ubuntu2004)
+  * `ghcr.io/pteroforge/yolks:ubuntu2004`  
 ### [Cassandra](/cassandra)
   * [`cassandra_java8_python27`](/cassandra/cassandra_java8_python2)
     * `ghcr.io/pteroforge/yolks:cassandra_java11_python2`
@@ -59,7 +61,9 @@ is tagged correctly.
   * [`fivem`](/games/fivem)
 	* `ghcr.io/pteroforge/games:fivem`
   * [`source`](/games/source)
-	* `ghcr.io/pteroforge/games:source`    
+	* `ghcr.io/pteroforge/games:source`
+  * [`source`](/games/ubuntu_source)
+	* `ghcr.io/pteroforge/games:ubuntu_source`   
 ### [Golang](/go)
   * [`go1.14`](/go/1.14)
     * `ghcr.io/pteroforge/yolks:go_1.14`
