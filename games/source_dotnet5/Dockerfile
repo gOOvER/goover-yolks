@@ -18,7 +18,7 @@ RUN     apt update -y \
           && dpkg -i packages-microsoft-prod.deb \
           && rm packages-microsoft-prod.deb \
           && apt update -y \
-          && apt install -y dotnet-sdk-5.0 libgdiplus  \
+          && apt install -y dotnet-sdk-5.0 libgdiplus
 
 ## install rcon
 RUN			cd /tmp/ \
