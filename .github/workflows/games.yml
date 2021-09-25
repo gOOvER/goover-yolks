@@ -21,6 +21,7 @@ jobs:
           - fivem
           - source
           - source_debian10
+          - source_dotnet5
           - ubuntu_source
     steps:
       - uses: actions/checkout@v2
