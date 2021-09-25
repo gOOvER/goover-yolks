@@ -4,10 +4,11 @@ LABEL   author="Torsten Widmann" maintainer="info@goover.de"
 
 ENV     DEBIAN_FRONTEND noninteractive
 
+RUN 		dpkg --add-architecture i386 \
 RUN     apt update -y \
           && apt upgrade -y \
           && apt install -y apt-transport-https wget iproute2 \
-          && wget https://packages.microsoft.com/config/debian/10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb \
+          && wget https://packages.microsoft.com/config/debian/11/packages-microsoft-prod.deb -O packages-microsoft-prod.deb \
           && dpkg -i packages-microsoft-prod.deb \
           && rm packages-microsoft-prod.deb \
           && apt update -y \
