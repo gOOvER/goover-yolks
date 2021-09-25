@@ -1,4 +1,4 @@
-FROM    debian:buster-slim
+FROM    debian:bullseye-slim
 
 LABEL   author="Torsten Widmann" maintainer="info@goover.de"
 
@@ -12,7 +12,7 @@ RUN     apt update -y \
           && rm packages-microsoft-prod.deb \
           && apt update -y \
           && apt install -y aspnetcore-runtime-5.0 libgdiplus tar curl gcc g++ lib32gcc-s1 libgcc1 libcurl4-gnutls-dev:i386 libssl1.1:i386 libcurl4:i386 lib32tinfo6 libtinfo6:i386 lib32z1 lib32stdc++6 libncurses5:i386 libcurl3-gnutls:i386 libsdl2-2.0-0:i386 iproute2 gdb libsdl1.2debian libfontconfig1 telnet net-tools netcat tzdata libssl1.1:i386 libtinfo6:i386 libtbb2:i386 libtinfo5:i386 libcurl4-gnutls-dev:i386 libcurl4:i386 libncurses5:i386 libcurl3-gnutls:i386 \
-             libtcmalloc-minimal4:i386 faketime:i386 libtbb2:i386 lib32tinfo6 lib32stdc++6 lib32z1 libtbb2 libtinfo5 libstdc++6 readline-common libncursesw5 libfontconfig1 libnss-wrapper gettext-base libc++-dev libc6-i386 libcurl4
+          && apt install -y libtcmalloc-minimal4:i386 faketime:i386 libtbb2:i386 lib32tinfo6 lib32stdc++6 lib32z1 libtbb2 libtinfo5 libstdc++6 readline-common libncursesw5 libfontconfig1 libnss-wrapper gettext-base libc++-dev libc6-i386 libcurl4   
 
 ## install rcon
 RUN			cd /tmp/ \
