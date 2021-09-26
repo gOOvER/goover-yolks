@@ -4,11 +4,6 @@ cd /home/container
 # Make internal Docker IP address available to processes.
 export INTERNAL_IP=`ip route get 1 | awk '{print $NF;exit}'`
 
-echo "-------------------------------------------------------------"
-echo "Update npm to latest and update node packages. Please wait..."
-echo "-------------------------------------------------------------"
-npm install -g npm@latest; npm cache clean --force; npm update; npm install
-
 # Print Node.js Version
 echo "Installed Node Version:"
 node -v
