@@ -25,7 +25,8 @@ RUN     chmod +x winetricks
 RUN     cp winetricks /usr/local/bin
 
 # Install .NET Framework 4.5.2
-RUN     wineboot -u && winetricks -q dotnet452
+RUN     wineboot -u
+RUN     winetricks dotnet452
 
 # Setup a Wine prefix
 RUN     chown -R root:root /home/container
