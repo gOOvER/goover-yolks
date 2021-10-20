@@ -11,7 +11,7 @@ RUN apt update
 RUN apt install -y software-properties-common gnupg2
 RUN wget -nc https://dl.winehq.org/wine-builds/winehq.key
 RUN apt-key add winehq.key
-RUN apt-add-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ focal main'
+RUN apt-add-repository 'deb https://dl.winehq.org/wine-builds/debian/ bullseye main'
 RUN apt install -y winehq-devel winbind
 
 # Turn off Fixme warnings
