@@ -5,9 +5,9 @@ LABEL       author="Michael Parker" maintainer="parker@pterodactyl.io"
 LABEL       org.opencontainers.image.source="https://github.com/pterodactyl/yolks"
 LABEL       org.opencontainers.image.licenses=MIT
 
-RUN 		    apt update -y \
-            && apt upgrade -y \
- 			      && apt install -y curl ca-certificates openssl git tar sqlite fontconfig tzdata iproute2 \
+RUN 		    apt update -y
+RUN         apt upgrade -y
+RUN         apt install -y curl ca-certificates openssl git tar sqlite fontconfig tzdata iproute2
 RUN         useradd -d /home/container -m container
 
 USER        container

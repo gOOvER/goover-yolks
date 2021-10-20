@@ -13,22 +13,20 @@ RUN     wget -nc https://dl.winehq.org/wine-builds/winehq.key
 RUN     apt-key add winehq.key
 RUN     apt-add-repository 'deb https://dl.winehq.org/wine-builds/debian/ bullseye main'
 RUN     apt update \
-        && apt install --install-recommends -y winehq-stable
+        && apt install --install-recommends -y winehq-stable winbind
 
 # Turn off Fixme warnings
 ENV     WINEDEBUG=fixme-all
 
 # Install Winetricks
 RUN     apt install -y cabextract
-RUN     wget https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks
-RUN     chmod +x winetricks
-RUN     cp winetricks /usr/local/bin
+RUN     wget 'https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks' -O /usr/local/bin/winetricks
+RUN     chmod +x /usr/local/bin/winetricks
 
-# Install .NET Framework 4.5.2
-RUN     wineboot -u
-RUN     winetricks dotnet452
 
-# Setup a Wine prefix
+ENV     WINEPREFIX=$HOME/winedotnet wineboot --init
+ENV     WINEPREFIX=$HOME/winedotnet winetricks --force dotnet452 corefonts
+
 RUN     chown -R root:root /home/container
 ENV     HOME=/home/container
 USER    container
