@@ -23,10 +23,7 @@ RUN     apt install -y cabextract
 RUN     wget 'https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks' -O /usr/local/bin/winetricks
 RUN     chmod +x /usr/local/bin/winetricks
 
-ENV     WINEPREFIX=$HOME/winedotnet winetricks --force dotnet452 corefonts
-
 RUN     chown -R root:root /home/container
-ENV     HOME=/home/container
 USER    container
 
 ENV     WINEPREFIX=/home/container/.wine

@@ -1,11 +1,15 @@
 #/bin/sh
 
 # Install SteamCMD
-mkdir /home/container/steamcmd
-wget -P /home/container/steamcmd https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz
+cd /home/container
+mkdir -p steamcmd
+wget -P r/steamcmd https://steamcdn-a.akamaihd.net/client/installer/steamcmd_linux.tar.gz
 tar xvf /home/container/steamcmd/steamcmd_linux.tar.gz -C /home/container/steamcmd
 
 /home/container/steamcmd/steamcmd.sh +@sSteamCmdForcePlatformType windows +login anonymous +force_install_dir /home/container +app_update 598850 validate +quit
+
+
+
 
 cd /home/container
 mv GameServer_example.ini GameServer.ini

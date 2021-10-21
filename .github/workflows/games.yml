@@ -23,7 +23,7 @@ jobs:
           - source
           - source_debian10
           - source_dotnet5
-          - ubuntu_source
+          - source_source
     steps:
       - uses: actions/checkout@v2
       - uses: docker/setup-buildx-action@v1

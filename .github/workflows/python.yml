@@ -17,10 +17,11 @@ jobs:
       fail-fast: false
       matrix:
         tag:
-          - 2.7
-          - 3.7
-          - 3.8
-          - 3.9
+          - '2.7'
+          - '3.7'
+          - '3.8'
+          - '3.9'
+          - '3.10'
     steps:
       - uses: actions/checkout@v2
       - uses: docker/setup-buildx-action@v1
