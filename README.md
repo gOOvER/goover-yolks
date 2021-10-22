@@ -63,7 +63,7 @@ is tagged correctly.
   * [`source`](/games/source)
   * `ghcr.io/pteroforge/games:source`
   * [`source`](/games/source_debian10)
-	* `ghcr.io/pteroforge/games:source_debian10` 
+	* `ghcr.io/pteroforge/games:source_debian10`
   * [`source`](/games/ubuntu_source)
 	* `ghcr.io/pteroforge/games:ubuntu_source`   
 ### [Golang](/go)
@@ -74,18 +74,14 @@ is tagged correctly.
   * [`go1.16`](/go/1.16)
     * `ghcr.io/pteroforge/yolks:go_1.16`
 ### [Java](/java)
-  * [`java7`](/java/7)
-    * `ghcr.io/pteroforge/yolks:java_7`
   * [`java8`](/java/8)
     * `ghcr.io/pteroforge/yolks:java_8`
-  * [`java9`](/java/9)
-    * `ghcr.io/pteroforge/yolks:java_9`
   * [`java11`](/java/11)
     * `ghcr.io/pteroforge/yolks:java_11`
-  * [`java14`](/java/14)
-    * `ghcr.io/pteroforge/yolks:java_14`
   * [`java16`](/java/16)
     * `ghcr.io/pteroforge/yolks:java_16`
+  * [`java17`](/java/17)
+    * `ghcr.io/pteroforge/yolks:java_17`
 ### [Nodejs](/nodejs)
   * [`node12`](/nodejs/12)
     * `ghcr.io/pteroforge/yolks:nodejs_12`
@@ -93,6 +89,8 @@ is tagged correctly.
     * `ghcr.io/pteroforge/yolks:nodejs_14`
   * [`node16`](/nodejs/16)
     * `ghcr.io/pteroforge/yolks:nodejs_16`
+  * [`node16`](/nodejs/17)
+    * `ghcr.io/pteroforge/yolks:nodejs_17`  
 ### [Python](/python)
   * [`python3.7`](/python/3.7)
     * `ghcr.io/pteroforge/yolks:python_3.7`
@@ -100,9 +98,14 @@ is tagged correctly.
     * `ghcr.io/pteroforge/yolks:python_3.8`
   * [`python3.9`](/python/3.9)
     * `ghcr.io/pteroforge/yolks:python_3.9`
+  * [`python3.10`](/python/3.9)
+    * `ghcr.io/pteroforge/yolks:python_3.10`    
 ### [Voice](/voice)
   * [`TeaSpeak`](/teaspeak)
     * `ghcr.io/pteroforge/yolks:voice:teaspeak`
+### [Wine](/wine)
+  * [`Wine 6 + SteamCMD`](/wine/6)
+    * `ghcr.io/pteroforge/yolks:wine_6`
 
 ### [Installation Images](/installers)
 

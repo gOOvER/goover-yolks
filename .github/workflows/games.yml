@@ -19,7 +19,6 @@ jobs:
         game:
           - arma3
           - fivem
-          - hellion
           - source
           - source_debian10
           - source_dotnet5
