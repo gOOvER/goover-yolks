@@ -28,25 +28,25 @@ is tagged correctly.
 ### [Oses](/oses)
 * [alpine](/oses/alpine)
   * `ghcr.io/pteroforge/yolks:alpine`
-* [debian10](/oses/debian10)
+* [Debian 10 Buster](/oses/debian10)
   * `ghcr.io/pteroforge/yolks:debian10`
-* [debian11](/oses/debian11)
+* [Debian 11 Bullseye](/oses/debian11)
   * `ghcr.io/pteroforge/yolks:debian11`  
-* [ubuntu](/oses/ubuntu1804)
+* [Ubuntu 18.04](/oses/ubuntu1804)
   * `ghcr.io/pteroforge/yolks:ubuntu1804`
-* [ubuntu](/oses/ubuntu2004)
+* [Ubuntu 20.04](/oses/ubuntu2004)
   * `ghcr.io/pteroforge/yolks:ubuntu2004`  
 ### [Cassandra](/cassandra)
   * [`cassandra_java8_python27`](/cassandra/cassandra_java8_python2)
-    * `ghcr.io/pteroforge/yolks:cassandra_java11_python2`
+    * `ghcr.io/pteroforge/yolks:cassandra_java8_python2`
   * [`cassandra_java11_python3`](/cassandra/cassandra_java11_python3)
     * `ghcr.io/pteroforge/yolks:cassandra_java11_python3`
 ### [dotNet](/dotnet)
-  * [`dotnet2.1`](/dotnet/2.1)
+  * [`DotNet 2.1`](/dotnet/2.1)
     * `ghcr.io/pteroforge/yolks:dotnet_2.1`
-  * [`dotnet3.1`](/dotnet/3.1)
+  * [`DotNet 3.1`](/dotnet/3.1)
     * `ghcr.io/pteroforge/yolks:dotnet_3.1`
-  * [`dotnet5.0`](/dotnet/5.0)
+  * [`DotNet 5.0`](/dotnet/5.0)
     * `ghcr.io/pteroforge/yolks:dotnet_5.0`    
 ### [Erlang](/erlang)
   * [`erlang22`](/erlang/22)
@@ -74,31 +74,31 @@ is tagged correctly.
   * [`go1.16`](/go/1.16)
     * `ghcr.io/pteroforge/yolks:go_1.16`
 ### [Java](/java)
-  * [`java8`](/java/8)
+  * [`Java 8`](/java/8)
     * `ghcr.io/pteroforge/yolks:java_8`
-  * [`java11`](/java/11)
+  * [`Java 11`](/java/11)
     * `ghcr.io/pteroforge/yolks:java_11`
-  * [`java16`](/java/16)
+  * [`Java 16`](/java/16)
     * `ghcr.io/pteroforge/yolks:java_16`
-  * [`java17`](/java/17)
+  * [`Java 17`](/java/17)
     * `ghcr.io/pteroforge/yolks:java_17`
 ### [Nodejs](/nodejs)
-  * [`node12`](/nodejs/12)
+  * [`NodeJS 12`](/nodejs/12)
     * `ghcr.io/pteroforge/yolks:nodejs_12`
-  * [`node14`](/nodejs/14)
+  * [`NodeJS 14`](/nodejs/14)
     * `ghcr.io/pteroforge/yolks:nodejs_14`
-  * [`node16`](/nodejs/16)
+  * [`NodeJS 16`](/nodejs/16)
     * `ghcr.io/pteroforge/yolks:nodejs_16`
-  * [`node16`](/nodejs/17)
+  * [`NodeJS 17`](/nodejs/17)
     * `ghcr.io/pteroforge/yolks:nodejs_17`  
 ### [Python](/python)
-  * [`python3.7`](/python/3.7)
+  * [`Python 3.7`](/python/3.7)
     * `ghcr.io/pteroforge/yolks:python_3.7`
-  * [`python3.8`](/python/3.8)
+  * [`Python 3.8`](/python/3.8)
     * `ghcr.io/pteroforge/yolks:python_3.8`
-  * [`python3.9`](/python/3.9)
+  * [`Python 3.9`](/python/3.9)
     * `ghcr.io/pteroforge/yolks:python_3.9`
-  * [`python3.10`](/python/3.9)
+  * [`Python 3.10`](/python/3.9)
     * `ghcr.io/pteroforge/yolks:python_3.10`    
 ### [Voice](/voice)
   * [`TeaSpeak`](/teaspeak)
