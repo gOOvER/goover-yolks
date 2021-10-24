@@ -1,4 +1,4 @@
-FROM        python:3.8-slim
+FROM        python:3.9-slim
 
 LABEL       author="Michael Parker" maintainer="parker@pterodactyl.io"
 
@@ -12,7 +12,7 @@ RUN         mkdir -p /usr/share/man/man1 \
             && ln -s /home/container/.config/Red-DiscordBot/ /usr/local/share/Red-DiscordBot
 
 USER        container
-ENV         USER=container HOME=/home/container 
+ENV         USER=container HOME=/home/container
 WORKDIR     /home/container
 
 COPY        ./entrypoint.sh /entrypoint.sh
