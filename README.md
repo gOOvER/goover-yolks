@@ -84,6 +84,11 @@ is tagged correctly.
     * `ghcr.io/pteroforge/yolks:java_16`
   * [`Java 17`](/java/17)
     * `ghcr.io/pteroforge/yolks:java_17`
+### [Mono](/mono)
+  * [`Mono 5`](/mono/5)
+    * `ghcr.io/pteroforge/yolks:mono_5`
+  * [`Mono 6`](/mono/6)
+    * `ghcr.io/pteroforge/yolks:mono_6`
 ### [Nodejs](/nodejs)
   * [`NodeJS 12`](/nodejs/12)
     * `ghcr.io/pteroforge/yolks:nodejs_12`
