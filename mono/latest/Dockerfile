@@ -6,8 +6,6 @@ FROM        ghcr.io/parkervcp/yolks:debian
 
 LABEL       author="Torsten Widmann" maintainer="support@goover.de"
 
-RUN         useradd -d /home/container -m container
-
 RUN         apt update \
             && apt -y upgrade
 RUN         apt install -y iproute2 ca-certificates unzip tar sqlite3 fontconfig dirmngr gnupg apt-transport-https
@@ -15,6 +13,8 @@ RUN         apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3F
 RUN         sh -c 'echo "deb https://download.mono-project.com/repo/debian stable-buster main" > /etc/apt/sources.list.d/mono-official-stable.list'
 RUN         apt update
 RUN         apt install mono-complete -y
+
+RUN         useradd -d /home/container -m container
 
 USER        container
 ENV         USER=container HOME=/home/container
