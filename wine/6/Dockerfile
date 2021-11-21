@@ -34,7 +34,7 @@ ENV     DISPLAY_DEPTH=16
 ENV     AUTO_UPDATE=1
 ENV     XVFB=1
 
-USER    container
+#USER    container
 WORKDIR	/home/container
 
 COPY    ./entrypoint.sh /entrypoint.sh
