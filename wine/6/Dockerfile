@@ -15,7 +15,7 @@ RUN     wget -nc https://dl.winehq.org/wine-builds/winehq.key
 RUN     apt-key add winehq.key
 RUN     apt-add-repository 'deb http://dl.winehq.org/wine-builds/debian/ buster main'
 RUN     apt update
-RUN     apt install -y --install-recommends winehq-stable cabextract xvfb
+RUN     apt install --install-recommends winehq-stable cabextract xvfb -y
 
 # Set up Winetricks
 RUN	    wget -q -O /usr/sbin/winetricks https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks
