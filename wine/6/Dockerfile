@@ -7,7 +7,7 @@ LABEL   author="Michael Parker" maintainer="parker@pterodactyl.io"
 
 ## install required packages
 RUN     dpkg --add-architecture i386
-RUN     apt update -y
+RUN     apt update
 RUN     apt install -y --no-install-recommends gnupg2 software-properties-common libntlm0 winbind xvfb xauth python3 libncurses5:i386 libncurses6:i386
 
 # Install winehq-stable and with recommends
