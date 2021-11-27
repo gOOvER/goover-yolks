@@ -2,7 +2,7 @@ FROM        --platform=$TARGETOS/$TARGETARCH alpine:latest
 
 LABEL       author="Torsten Widmann" maintainer="support@goover.de"
 
-RUN         adduser -D -h /home/container -m container
+RUN         adduser -D -h /home/container container
 
 RUN         apk add --update --no-cache ca-certificates curl openssl git tar sqlite fontconfig tzdata iproute2 wget
 
