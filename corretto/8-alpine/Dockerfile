@@ -9,7 +9,7 @@ RUN         apk add --update --no-cache ca-certificates curl openssl git tar sql
 RUN         wget -O /etc/apk/keys/amazoncorretto.rsa.pub  https://apk.corretto.aws/amazoncorretto.rsa.pub
 RUN         echo "https://apk.corretto.aws/" >> /etc/apk/repositories
 RUN         apk update
-RUN         apk add amazon-corretto-8
+RUN         apk add --update --no-cache add amazon-corretto-8
 
 USER        container
 ENV         USER=container HOME=/home/container
