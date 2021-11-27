@@ -2,10 +2,9 @@ FROM        --platform=$TARGETOS/$TARGETARCH alpine:latest
 
 LABEL       author="Torsten Widmann" maintainer="support@goover.de"
 
-RUN         useradd -d /home/container -m container
+RUN         adduser -D -h /home/container -m container
 
-RUN 		    apk update -y
-RUN         apk install -y curl openssl git tar sqlite fontconfig tzdata iproute2 wget
+RUN         apk add --update --no-cache ca-certificates curl openssl git tar sqlite fontconfig tzdata iproute2 wget
 
 RUN         wget -O /etc/apk/keys/amazoncorretto.rsa.pub  https://apk.corretto.aws/amazoncorretto.rsa.pub
 RUN         echo "https://apk.corretto.aws/" >> /etc/apk/repositories
