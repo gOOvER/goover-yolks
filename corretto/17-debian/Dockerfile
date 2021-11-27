@@ -10,7 +10,7 @@ RUN         apt install -y curl ca-certificates openssl git tar sqlite3 fontconf
 RUN          wget -O- -q https://apt.corretto.aws/corretto.key | apt-key add -
 RUN          add-apt-repository 'deb https://apt.corretto.aws stable main'
 RUN          apt update
-RUN          apt install -y java-17amazon-corretto-jdk
+RUN          apt install -y java-17-amazon-corretto-jdk
 
 USER        container
 ENV         USER=container HOME=/home/container
