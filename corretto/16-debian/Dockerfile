@@ -2,14 +2,15 @@ FROM        --platform=$TARGETOS/$TARGETARCH debian:bullseye-slim
 
 LABEL       author="Torsten Widmann" maintainer="support@goover.de"
 
-RUN 		    apt update -y \
- 			      && apt install -y curl ca-certificates openssl git tar sqlite3 fontconfig tzdata iproute2 libfreetype6 \
- 			      && useradd -d /home/container -m container
+RUN         useradd -d /home/container -m container
 
-RUN          wget -O- https://apt.corretto.aws/corretto.key | apt-key add - \
-             && add-apt-repository 'deb https://apt.corretto.aws stable main'
-RUN          apt update \
-             && apt install -y java-16-amazon-corretto-jdk
+RUN 		    apt update -y
+RUN         apt install -y curl ca-certificates openssl git tar sqlite3 fontconfig tzdata iproute2 libfreetype6 wget
+
+RUN          wget -O- https://apt.corretto.aws/corretto.key | apt-key add -
+RUN          add-apt-repository 'deb https://apt.corretto.aws stable main'
+RUN          apt update
+RUN          apt install -y java-16-amazon-corretto-jdk
 
 USER        container
 ENV         USER=container HOME=/home/container
