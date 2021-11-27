@@ -5,7 +5,7 @@ LABEL       author="Torsten Widmann" maintainer="support@goover.de"
 RUN         useradd -d /home/container -m container
 
 RUN 		    apt update -y
-RUN         apt install -y curl ca-certificates openssl git tar sqlite3 fontconfig tzdata iproute2 libfreetype6 wget apt-transport-https apt-utils
+RUN         apt install -y curl ca-certificates openssl git tar sqlite3 fontconfig tzdata iproute2 libfreetype6 wget apt-transport-https apt-utils gnupg2
 
 RUN          wget -O- -q https://apt.corretto.aws/corretto.key | apt-key add -
 RUN          add-apt-repository 'deb https://apt.corretto.aws stable main'
