@@ -1,3 +1,5 @@
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/B0B351D0Q)
+
 # Yolks
 
 A curated collection of core images that can be used with Pterodactyl's Egg system. Each image is rebuilt
