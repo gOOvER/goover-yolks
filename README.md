@@ -43,6 +43,15 @@ is tagged correctly.
     * `ghcr.io/pteroforge/yolks:cassandra_java8_python2`
   * [`cassandra_java11_python3`](/cassandra/cassandra_java11_python3)
     * `ghcr.io/pteroforge/yolks:cassandra_java11_python3`
+### [Amazon Corretto](/coretto)
+  * [`Corretto 8`](/corretto/8)
+    * `ghcr.io/pteroforge/yolks:corretto_8`
+  * [`Corretto 11`](/corretto/11)
+    * `ghcr.io/pteroforge/yolks:corretto_11`
+  * [`Corretto 16`](/corretto/16)
+    * `ghcr.io/pteroforge/yolks:corretto_16`
+  * [`Corretto 17`](/corretto/17)
+    * `ghcr.io/pteroforge/yolks:corretto_17`  
 ### [dotNet](/dotnet)
   * [`DotNet 2.1`](/dotnet/2.1)
     * `ghcr.io/pteroforge/yolks:dotnet_2.1`
@@ -64,12 +73,6 @@ is tagged correctly.
     * `ghcr.io/pteroforge/games:arma3`
   * [`fivem`](/games/fivem)
 	* `ghcr.io/pteroforge/games:fivem`
-  * [`source`](/games/source)
-  * `ghcr.io/pteroforge/games:source`
-  * [`source`](/games/source_debian10)
-	* `ghcr.io/pteroforge/games:source_debian10`
-  * [`source`](/games/ubuntu_source)
-	* `ghcr.io/pteroforge/games:ubuntu_source`   
 ### [Golang](/go)
   * [`go1.14`](/go/1.14)
     * `ghcr.io/pteroforge/yolks:go_1.14`
@@ -87,10 +90,8 @@ is tagged correctly.
   * [`Java 17`](/java/17)
     * `ghcr.io/pteroforge/yolks:java_17`
 ### [Mono](/mono)
-  * [`Mono 5`](/mono/5)
-    * `ghcr.io/pteroforge/yolks:mono_5`
-  * [`Mono 6`](/mono/6)
-    * `ghcr.io/pteroforge/yolks:mono_6`
+  * [`Mono Latest`](/mono/latest)
+    * `ghcr.io/pteroforge/yolks:mono_latest`
 ### [Nodejs](/nodejs)
   * [`NodeJS 12`](/nodejs/12)
     * `ghcr.io/pteroforge/yolks:nodejs_12`
@@ -108,7 +109,14 @@ is tagged correctly.
   * [`Python 3.9`](/python/3.9)
     * `ghcr.io/pteroforge/yolks:python_3.9`
   * [`Python 3.10`](/python/3.9)
-    * `ghcr.io/pteroforge/yolks:python_3.10`    
+    * `ghcr.io/pteroforge/yolks:python_3.10`
+### [SteamCMD](/steam)
+  * [`SteamCMD Debian Latest`](/steamcmd/debian)
+    * `ghcr.io/pteroforge/steamcmd_debian`
+  * [`SteamCMD Debian 10`](/steamcmd_debian10)
+    * `ghcr.io/pteroforge/ames:source_debian10`
+  * [`SteamCMD Ubuntu Latest`](/steamcmd_ubuntu)
+    * `ghcr.io/pteroforge/steamcmd_ubuntu`   
 ### [Voice](/voice)
   * [`TeaSpeak`](/teaspeak)
     * `ghcr.io/pteroforge/yolks:voice:teaspeak`

@@ -18,11 +18,7 @@ jobs:
       matrix:
         game:
           - arma3
-          - fivem
-          - source
-          - source_debian10
-          - source_dotnet5
-          - source_ubuntu
+          - fivem          
     steps:
       - uses: actions/checkout@v2
       - uses: docker/setup-buildx-action@v1
