@@ -18,7 +18,7 @@ RUN     apt-add-repository 'deb http://dl.winehq.org/wine-builds/debian/ bullsey
 #RUN     wget -O- -q https://download.opensuse.org/repositories/Emulators:/Wine:/Debian/Debian_11/Release.key | apt-key add -
 #RUN     echo "deb http://download.opensuse.org/repositories/Emulators:/Wine:/Debian/Debian_11 ./" | tee /etc/apt/sources.list.d/wine-obs.list
 RUN     apt update
-RUN     apt install --install-recommends winehq-devel cabextract -y
+RUN     apt install --install-recommends winehq-devel cabextract wine32 wine64 -y
 
 # Set up Winetricks
 RUN	    wget -q -O /usr/sbin/winetricks https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks
