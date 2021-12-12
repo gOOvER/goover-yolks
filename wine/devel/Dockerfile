@@ -14,9 +14,9 @@ RUN     apt install -y --no-install-recommends gnupg2 software-properties-common
 RUN     wget -nc https://dl.winehq.org/wine-builds/winehq.key
 RUN     apt-key add winehq.key
 RUN     apt-add-repository 'deb http://dl.winehq.org/wine-builds/debian/ bullseye main'
-RUN     apt update
-RUN     wget -O- -q https://download.opensuse.org/repositories/Emulators:/Wine:/Debian/Debian_11/Release.key | apt-key add -
-RUN     echo "deb http://download.opensuse.org/repositories/Emulators:/Wine:/Debian/Debian_11 ./" | tee /etc/apt/sources.list.d/wine-obs.list
+#RUN     apt update
+#RUN     wget -O- -q https://download.opensuse.org/repositories/Emulators:/Wine:/Debian/Debian_11/Release.key | apt-key add -
+#RUN     echo "deb http://download.opensuse.org/repositories/Emulators:/Wine:/Debian/Debian_11 ./" | tee /etc/apt/sources.list.d/wine-obs.list
 RUN     apt update
 RUN     apt install --install-recommends winehq-devel cabextract -y
 
