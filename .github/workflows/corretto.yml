@@ -40,4 +40,4 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            ghcr.io/pteroforge/yolks:corretto_${{ matrix.tag }}
+            ghcr.io/goover/yolks:corretto_${{ matrix.tag }}
