@@ -18,7 +18,7 @@ jobs:
       matrix:
         game:
           - arma3
-          - fivem          
+          - fivem
     steps:
       - uses: actions/checkout@v2
       - uses: docker/setup-buildx-action@v1
@@ -37,4 +37,4 @@ jobs:
           platforms: linux/amd64
           push: true
           tags: |
-             ghcr.io/pteroforge/games:${{ matrix.game }}
+             ghcr.io/goover/games:${{ matrix.game }}
