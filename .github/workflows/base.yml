@@ -39,4 +39,4 @@ jobs:
           platforms: linux/amd64
           push: true
           tags: |
-            ghcr.io/gOOvER/yolks_os:${{ matrix.oses }}
+            ghcr.io/goover/yolks_os:${{ matrix.oses }}
