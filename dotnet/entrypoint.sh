@@ -1,4 +1,4 @@
-#!/bin/bash
+#
 # Switch to the container's working directory
 cd /home/container
 
@@ -42,8 +42,9 @@ else
     echo -e "Not updating game server as auto update was set to 0. Starting Server"
 fi
 
-# Display the command we're running in the output, and then execute it with the env
-# from the container itself.
-printf "\033[1m\033[33mcontainer@pterodactyl~ \033[0m%s\n" "$PARSED"
-# shellcheck disable=SC2086
-exec env ${PARSED}
+# Replace Startup Variables
+MODIFIED_STARTUP=$(echo ${STARTUP} | sed -e 's/{{/${/g' -e 's/}}/}/g')
+echo -e ":/home/container$ ${MODIFIED_STARTUP}"
+
+# Run the Server
+eval ${MODIFIED_STARTUP}
