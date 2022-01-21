@@ -144,7 +144,7 @@ is tagged correctly.
     * `ghcr.io/goover/yolks:voice:teaspeak`
 
 ### [Wine](/wine)
-  * [`Wine 6 + SteamCMD`](/wine/6)
+  * [`Wine 7 + SteamCMD`](/wine/6)
     * `ghcr.io/goover/yolks:wine_6`
 
 ### [Installation Images](/installers)
