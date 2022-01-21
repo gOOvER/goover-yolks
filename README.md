@@ -86,6 +86,8 @@ is tagged correctly.
     * `ghcr.io/goover/games:arma3`
   * [`fivem`](/games/fivem)
 	  * `ghcr.io/goover/games:fivem`
+  * [`rust`](/games/rust)
+	  * `ghcr.io/goover/games:rust`
 
 ### [Golang](/go)
   * [`go1.14`](/go/1.14)
