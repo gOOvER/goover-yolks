@@ -19,6 +19,7 @@ jobs:
         game:
           - arma3
           - fivem
+          - rust
     steps:
       - uses: actions/checkout@v2
       - uses: docker/setup-buildx-action@v1
