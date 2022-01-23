@@ -17,6 +17,7 @@ jobs:
       fail-fast: false
       matrix:
         tag:
+          - '10.3'
           - '10.4'
           - '10.5'
           - '10.6'
