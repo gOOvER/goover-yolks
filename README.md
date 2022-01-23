@@ -29,8 +29,8 @@ When adding a new version to an existing image, such as `java v42`, you'd add it
 is tagged correctly.
 
 ## Available Images
-### [Oses](/oses)
-* [alpine](/oses/alpine)
+### [Linux Distros](/oses)
+* [Alpine](/oses/alpine)
   * `ghcr.io/goover/yolks:alpine`
 * [Debian 10 Buster](/oses/debian10)
   * `ghcr.io/goover/yolks:debian10`
@@ -164,7 +164,7 @@ is tagged correctly.
     * `ghcr.io/goover/yolks:wine_stable`
   * [`Wine devel`](/wine/devel)
     * `ghcr.io/goover/yolks:wine_devel`
-      
+
 ### [Installation Images](/installers)
 * [`alpine-install`](/installers/alpine)
   * `ghcr.io/goover/installers:alpine`
