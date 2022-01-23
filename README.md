@@ -63,15 +63,15 @@ is tagged correctly.
   * [`DotNet 3.1`](/dotnet/3.1)
     * `ghcr.io/goover/yolks:dotnet_3.1`
   * [`DotNet 3.1-sdk`](/dotnet/3.1-sdk)
-    * `ghcr.io/goover/yolks:dotnet_6.0`
-  * [`DotNet 2.1`](/dotnet/2.1)
-    * `ghcr.io/goover/yolks:dotnet_2.1`
-  * [`DotNet 3.1`](/dotnet/3.1)
-    * `ghcr.io/goover/yolks:dotnet_3.1`
+    * `ghcr.io/goover/yolks:dotnet_3.1-sdk`
   * [`DotNet 5.0`](/dotnet/5.0)
     * `ghcr.io/goover/yolks:dotnet_5.0`
+  * [`DotNet 5.0-sdk`](/dotnet/5.0-sdk)
+    * `ghcr.io/goover/yolks:dotnet_5.0-sdk`  
   * [`DotNet 6.0`](/dotnet/6.0)
-    * `ghcr.io/goover/yolks:dotnet_6.0`      
+    * `ghcr.io/goover/yolks:dotnet_6.0`
+  * [`DotNet 6.0-sdk`](/dotnet/6.0-sdk)
+    * `ghcr.io/goover/yolks:dotnet_6.0-sdk`  
 
 ### [Erlang](/erlang)
   * [`erlang22`](/erlang/22)
