@@ -107,6 +107,18 @@ is tagged correctly.
   * [`Java 17`](/java/17)
     * `ghcr.io/goover/yolks:java_17`
 
+### [MariaDB](/mariadb)
+  * [`MariaDB 10.3`](/mariadb/10.3)
+    * `ghcr.io/goover/yolks:mariadb_10.3`
+  * [`MariaDB 10.4`](/mariadb/10.4)
+    * `ghcr.io/goover/yolks:mariadb_10.4`
+  * [`MariaDB 10.5`](/mariadb/10.5)
+    * `ghcr.io/goover/yolks:mariadb_10.5`
+  * [`MariaDB 10.6`](/mariadb/10.6)
+    * `ghcr.io/goover/yolks:mariadb_10.6`
+  * [`MariaDB 10.7`](/mariadb/10.7)
+    * `ghcr.io/goover/yolks:mariadb_10.7`  
+
 ### [Mono](/mono)
   * [`Mono Latest`](/mono/latest)
     * `ghcr.io/goover/yolks:mono_latest`
