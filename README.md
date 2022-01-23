@@ -158,9 +158,13 @@ is tagged correctly.
     * `ghcr.io/goover/yolks:voice:teaspeak`
 
 ### [Wine](/wine)
-  * [`Wine 7 + SteamCMD`](/wine/6)
-    * `ghcr.io/goover/yolks:wine_6`
-
+  * [`Wine staging`](/wine/staging)
+    * `ghcr.io/goover/yolks:wine_staging`
+  * [`Wine stable`](/wine/stable)
+    * `ghcr.io/goover/yolks:wine_stable`
+  * [`Wine devel`](/wine/devel)
+    * `ghcr.io/goover/yolks:wine_devel`
+      
 ### [Installation Images](/installers)
 * [`alpine-install`](/installers/alpine)
   * `ghcr.io/goover/installers:alpine`
