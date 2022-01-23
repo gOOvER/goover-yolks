@@ -145,6 +145,12 @@ is tagged correctly.
   * [`Python 3.10`](/python/3.9)
     * `ghcr.io/goover/yolks:python_3.10`
 
+### [Redis](/redis)
+  * [`Redis 5`](/redis/5)
+    * `ghcr.io/goover/yolks:redis_5`
+  * [`Redis 6`](/redis/6)
+    * `ghcr.io/goover/yolks:redis_6`
+    
 ### [SteamCMD](/steam)
   * [`SteamCMD Debian Latest`](/steamcmd/debian)
     * `ghcr.io/goover/steamcmd_debian`
