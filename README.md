@@ -1,5 +1,7 @@
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/B0B351D0Q)
 
+All Images are based on Parkers Yolks. I added some more packages and more versions
+
 # Yolks
 
 A curated collection of core images that can be used with Pterodactyl's Egg system. Each image is rebuilt
