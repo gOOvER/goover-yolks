@@ -121,6 +121,12 @@ is tagged correctly.
   * [`MariaDB 10.7`](/mariadb/10.7)
     * `ghcr.io/goover/yolks:mariadb_10.7`  
 
+### [MongoDB](/mongodb)
+  * [`MongoDB 4`](/mongodb/4)
+    * `ghcr.io/goover/yolks:mongodb_4`
+  * [`MongoDB 5`](/mongodb/5)
+    * `ghcr.io/goover/yolks:mongodb_5`
+
 ### [Mono](/mono)
   * [`Mono Latest`](/mono/latest)
     * `ghcr.io/goover/yolks:mono_latest`
