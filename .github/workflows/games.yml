@@ -17,9 +17,11 @@ jobs:
       fail-fast: false
       matrix:
         game:
+          - altv
           - arma3
           - fivem
           - rust
+          - samp
     steps:
       - uses: actions/checkout@v2
       - uses: docker/setup-buildx-action@v1
