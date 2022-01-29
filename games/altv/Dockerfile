@@ -1,10 +1,9 @@
 # ----------------------------------
-# Environment: ubuntu
-# Minimum Panel Version: 0.7.X
+# Environment: debian
 # ----------------------------------
-FROM    node:14-buster-slim
+FROM    node:16-bullseye
 
-LABEL   author="paz" maintainer="paz@paz.yt"
+LABEL   author="goover" maintainer="info@goover.de"
 
 ENV     DEBIAN_FRONTEND noninteractive
 
@@ -15,10 +14,10 @@ RUN     apt update -y \
         && apt install -y gcc g++ libgcc1 lib32gcc1 gdb libc6 git wget curl tar zip unzip binutils xz-utils liblzo2-2 cabextract iproute2 net-tools netcat telnet libatomic1 libsdl1.2debian libsdl2-2.0-0 \
         libfontconfig libicu63 icu-devtools libunwind8 libssl-dev sqlite3 libsqlite3-dev libmariadbclient-dev libduktape203 locales ffmpeg gnupg2 apt-transport-https software-properties-common ca-certificates tzdata
 
-RUN     wget https://packages.microsoft.com/config/debian/10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb \
+RUN     wget https://packages.microsoft.com/config/debian/11/packages-microsoft-prod.deb -O packages-microsoft-prod.deb \
         && dpkg -i packages-microsoft-prod.deb \
         && apt update -y \
-        && apt install -y dotnet-sdk-5.0 dotnet-runtime-5.0 libgdiplus \
+        && apt install -y dotnet-sdk-6.0 dotnet-runtime-6.0 libgdiplus \
         && apt install -y ffmpeg iproute2 git sqlite3 python3 ca-certificates dnsutils build-essential \
         && apt install -y coreutils jq pcregrep
 
