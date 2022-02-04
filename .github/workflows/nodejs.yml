@@ -19,7 +19,7 @@ jobs:
         tag:
           - 12
           - 14
-          - '14-puppeteer'
+          - 14pptr
           - 16
           - 17
     steps:
