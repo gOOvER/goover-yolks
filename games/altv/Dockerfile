@@ -17,10 +17,6 @@ RUN     apt update -y \
 
 RUN     wget https://packages.microsoft.com/config/debian/11/packages-microsoft-prod.deb -O packages-microsoft-prod.deb \
         && dpkg -i packages-microsoft-prod.deb \
-        && rm packages-microsoft-prod.deb
-
-RUN     wget https://packages.microsoft.com/config/debian/11/packages-microsoft-prod.deb -O packages-microsoft-prod.deb \
-        && dpkg -i packages-microsoft-prod.deb \
         && apt update -y \
         && apt install -y dotnet-sdk-5.0 dotnet-sdk-6.0 libgdiplus
 		  
