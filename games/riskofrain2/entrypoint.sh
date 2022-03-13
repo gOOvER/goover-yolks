@@ -41,11 +41,9 @@ if [ -f BEPINEX_FLAG ] || [ "${BEPINEX}" = 1 ] ; then
     echo "Updating BepInEx..."
     curl -sSL "https://thunderstore.io/package/download/bbepis/BepInExPack/${BEP_VERSION}/" > bepinex.zip
     unzip -o -q bepinex.zip
-    cd  BepinExPack
-    mv -f * /mnt/server/
-    cd ..
+    mv -f /home/container/BepinExPack/* /home/container/
     rm -f bepinex.zip
-    rm -fR /mnt/server/BepinExPack
+    rm -fR /home/container/BepinExPack
     echo "Done installing BepInEx!"
 else
     echo "Removing BepInEx..."
@@ -55,6 +53,10 @@ else
      echo "Done removing BepInEx"
 fi
 
+#cleanup
+rm -f icon.png
+rm -f README.md
+rm -f manifest.json
 
 # Install necessary to run packages
 echo "First launch will throw some errors. Ignore them"
