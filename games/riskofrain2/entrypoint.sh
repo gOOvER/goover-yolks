@@ -41,16 +41,16 @@ if [ -f BEPINEX_FLAG ] || [ "${BEPINEX}" = 1 ] ; then
     echo "Updating BepInEx..."
     curl -sSL "https://thunderstore.io/package/download/bbepis/BepInExPack/${BEP_VERSION}/" > bepinex.zip
     unzip -o -q bepinex.zip
-    cd /mnt/server/BepInExPack
-    cp -fR * /mnt/server/
-    cd ..
+    mv -f /mnt/server/BepinExPack/* /mnt/server/
     rm -f bepinex.zip
-    rm -f /mnt/server/BepinExPack
-    echo "Done updating BepInEx!"
+    rm -fR /mnt/server/BepinExPack
+    echo "Done installing BepInEx!"
 else
+    echo "Removing BepInEx..."
      rm -fR BepInEx
      rm -f doorstop_config.ini
      rm -f winhttp.dll
+     echo "Done removing BepInEx"
 fi
 
 
