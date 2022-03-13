@@ -20,6 +20,7 @@ jobs:
           - altv
           - arma3
           - fivem
+          - riskofrain2
           - rust
           - samp
     steps:
