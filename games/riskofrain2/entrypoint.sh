@@ -36,6 +36,22 @@ if [[ $XVFB == 1 ]]; then
         Xvfb :0 -screen 0 ${DISPLAY_WIDTH}x${DISPLAY_HEIGHT}x${DISPLAY_DEPTH} &
 fi
 
+# BepInEx install
+if [ -f BEPINEX_FLAG ] || [ "${BEPINEX}" = 1 ] ; then
+    echo "Updating BepInEx..."
+    curl -sSL "https://thunderstore.io/package/download/bbepis/BepInExPack/${BEP_VERSION}/" > bepinex.zip
+    unzip -o -q bepinex.zip
+    cp -f /mnt/server/BepInExPack/* /mnt/server/
+    rm -f bepinex.zip
+    rm -f /mnt/server/BepinExPack
+    echo "Done updating BepInEx!"
+else
+     rm -fR BepInEx
+     rm -f doorstop_config.ini
+     rm -f winhttp.dll
+fi
+
+
 # Install necessary to run packages
 echo "First launch will throw some errors. Ignore them"
 
@@ -75,21 +91,6 @@ for trick in $WINETRICKS_RUN; do
         echo "Installing $trick"
         winetricks -q $trick
 done
-
-# BepInEx install
-if [ -f BEPINEX_FLAG ] || [ "${BEPINEX}" = 1 ] ; then
-    echo "Updating BepInEx..."
-    curl -sSL "https://thunderstore.io/package/download/bbepis/BepInExPack/${BEP_VERSION}/" > bpinex.zip
-    unzip -o -q bepinex.zip
-    cp -f /mnt/server/BepInExPack/* /mnt/server/
-    rm -f bepinex.zip
-    rm -f /mnt/server/BepinExPack
-    echo "Done updating BepInEx!"
-else
-     rm -fR BepInEx
-     rm -f doorstop_config.ini
-     rm -f winhttp.dll
-fi
 
 # Replace Startup Variables
 MODIFIED_STARTUP=$(echo ${STARTUP} | sed -e 's/{{/${/g' -e 's/}}/}/g')

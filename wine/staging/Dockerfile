@@ -1,5 +1,5 @@
 # ----------------------------------
-# Generic Wine 6 image
+# Generic Wine image
 # ----------------------------------
 FROM    ghcr.io/parkervcp/yolks:debian
 
