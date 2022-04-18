@@ -3,15 +3,14 @@ FROM        node:16-bullseye
 LABEL       author="Michael Parker" maintainer="parker@pterodactyl.io"
     ## install mongo
 RUN wget -qO - https://www.mongodb.org/static/pgp/server-5.0.asc | sudo apt-key add - \
- && apt -y install gnupg sudo  \
- && wget -qO - https://www.mongodb.org/static/pgp/server-5.0.asc | sudo apt-key add - \
- && echo "deb http://repo.mongodb.org/apt/debian buster/mongodb-org/5.0 main" | sudo tee /etc/apt/sources.list.d/mongodb-org-5.0.list \
- && apt update \
- && apt-get install -y mongodb-org \
- ## install bastion reqs
- && apt install -y python build-essential netcat ffmpeg \
- ## add container user
- && useradd -d /home/container -m container -s /bin/bash
+    && apt -y install gnupg sudo  \
+    && echo "deb http://repo.mongodb.org/apt/debian buster/mongodb-org/5.0 main" | sudo tee /etc/apt/sources.list.d/mongodb-org-5.0.list \
+    && apt update \
+    && apt-get install -y mongodb-org \
+    ## install bastion reqs
+    && apt install -y python build-essential netcat ffmpeg \
+    ## add container user
+    && useradd -d /home/container -m container -s /bin/bash
 
 USER        container
 ENV         USER=container HOME=/home/container
