@@ -1,11 +1,13 @@
-FROM        node:14-buster
+FROM        node:16-bullseye
 
 LABEL       author="Michael Parker" maintainer="parker@pterodactyl.io"
     ## install mongo
-RUN wget -qO - https://www.mongodb.org/static/pgp/server-4.2.asc | apt-key add - \
- && echo "deb http://repo.mongodb.org/apt/debian buster/mongodb-org/4.2 main" | tee /etc/apt/sources.list.d/mongodb-org-4.2.list \
+RUN wget -qO - https://www.mongodb.org/static/pgp/server-5.0.asc | sudo apt-key add - \
+ && apt -y install gnupg  \
+ && wget -qO - https://www.mongodb.org/static/pgp/server-5.0.asc | sudo apt-key add - \
+ && echo "deb http://repo.mongodb.org/apt/debian buster/mongodb-org/5.0 main" | sudo tee /etc/apt/sources.list.d/mongodb-org-5.0.list \
  && apt update \
- && apt install -y mongodb-org=4.2.7 mongodb-org-server=4.2.7 mongodb-org-shell=4.2.7 mongodb-org-mongos=4.2.7 mongodb-org-tools=4.2.7 \
+ && apt-get install -y mongodb-org \
  ## install bastion reqs
  && apt install -y python build-essential netcat ffmpeg \
  ## add container user
