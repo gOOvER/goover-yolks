@@ -21,11 +21,6 @@ example of this would be something like Java or Python which are used for runnin
 All of these images are available for `linux/amd64` and `linux/arm64` versions, unless otherwise specified, to use
 these images on an arm system, no modification to them or the tag is needed, they should just work.
 
-### Contributing
-
-When adding a new version to an existing image, such as `java v42`, you'd add it within a child folder of `java`, so
-`java/42/Dockerfile` for example. Please also update the correct `.github/workflows` file to ensure that this new version
-is tagged correctly.
 
 ## Available Images
 ### [Linux Distros](/oses)
@@ -86,9 +81,9 @@ is tagged correctly.
   * [`arma3`](/games/arma3)
     * `ghcr.io/goover/games:arma3`
   * [`fivem`](/games/fivem)
-	  * `ghcr.io/goover/games:fivem`
+	* `ghcr.io/goover/games:fivem`
   * [`rust`](/games/rust)
-	  * `ghcr.io/goover/games:rust`
+	* `ghcr.io/goover/games:rust`
 
 ### [Golang](/go)
   * [`go1.14`](/go/1.14)
@@ -138,7 +133,9 @@ is tagged correctly.
   * [`NodeJS 16`](/nodejs/16)
     * `ghcr.io/goover/yolks:nodejs_16`
   * [`NodeJS 17`](/nodejs/17)
-    * `ghcr.io/goover/yolks:nodejs_17`  
+    * `ghcr.io/goover/yolks:nodejs_17`
+  * [`NodeJS 17`](/nodejs/18)
+    * `ghcr.io/goover/yolks:nodejs_18`  
 
 ### [PostgreSQL](/postgres)
   * [`Postgres 9`](/postgres/9)
@@ -191,7 +188,7 @@ is tagged correctly.
     * `ghcr.io/goover/yolks:wine_devel`
 
 ### [Installation Images](/installers)
-* [`alpine-install`](/installers/alpine)
-  * `ghcr.io/goover/installers:alpine`
-* [`debian-install`](/installers/debian)
-  * `ghcr.io/goover/installers:debian`
+  * [`alpine-install`](/installers/alpine)
+    * `ghcr.io/goover/installers:alpine`
+  * [`debian-install`](/installers/debian)
+    * `ghcr.io/goover/installers:debian`
