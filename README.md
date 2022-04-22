@@ -1,4 +1,3 @@
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/B0B351D0Q)
 
 All Images are based on Parkers Yolks. I added some more packages and more versions
 
