@@ -22,6 +22,7 @@ jobs:
           - 14pptr
           - 16
           - 17
+          - 18
     steps:
       - uses: actions/checkout@v2
       # Setup QEMU for ARM64 Build
