@@ -50,6 +50,8 @@ these images on an arm system, no modification to them or the tag is needed, the
     * `ghcr.io/goover/yolks:corretto_16`
   * [`Corretto 17`](/corretto/17)
     * `ghcr.io/goover/yolks:corretto_17`  
+  * [`Corretto 18`](/corretto/18)
+    * `ghcr.io/goover/yolks:corretto_18`    
 
 ### [dotNet](/dotnet)
   * [`DotNet 2.1`](/dotnet/2.1)
