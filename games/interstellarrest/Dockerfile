@@ -24,10 +24,6 @@ RUN     apt install --install-recommends winehq-stable cabextract -y
 RUN	    wget -q -O /usr/sbin/winetricks https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks
 RUN     chmod +x /usr/sbin/winetricks
 
-# install dotnet48 & vc2012
-RUN     winetricks -q dotnet48
-RUN     winetricks -q vc2012
-
 ENV     HOME=/home/container
 ENV     WINEPREFIX=/home/container/.wine
 ENV     WINEDLLOVERRIDES="mscoree,mshtml="
