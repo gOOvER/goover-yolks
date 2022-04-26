@@ -77,8 +77,8 @@ for trick in $WINETRICKS_RUN; do
 done
 
 # install dotnet48 & vc2012
-winetricks -q dotnet48
-winetricks -q vc2012
+winetricks -f dotnet48
+winetricks -f vc2012
 
 # Replace Startup Variables
 MODIFIED_STARTUP=$(echo ${STARTUP} | sed -e 's/{{/${/g' -e 's/}}/}/g')
