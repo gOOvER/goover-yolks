@@ -33,10 +33,10 @@ ENV     AUTO_UPDATE=1
 ENV     XVFB=1
 
 #Static wine variables
-ENV     WINE_ARCH="win64" #Architecture of the wine prefix
-ENV     WINE_PREFIX_GAME_DIR="/home/container" #Location of server files.
-ENV     WINE_PREFIX_GAME_CONFIG="/home/container/config" #Server save and configuration location.
-ENV     WINE_PREFIX_GAME_EXE="/home/container/Build/IR.exe" #Server executable.
+ENV     WINE_ARCH="win64"
+ENV     WINE_PREFIX_GAME_DIR="/home/container/Build"
+ENV     WINE_PREFIX_GAME_CONFIG="/home/container/Build/config"
+ENV     WINE_PREFIX_GAME_EXE="/home/container/Build/IR.exe"
 
 USER    container
 WORKDIR	/home/container
