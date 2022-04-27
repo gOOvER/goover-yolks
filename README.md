@@ -25,16 +25,17 @@ these images on an arm system, no modification to them or the tag is needed, the
 ## Available Images
 ### [Linux Distros](/oses)
 * [Alpine](/oses/alpine)
-  * `ghcr.io/goover/yolks:alpine`
+  * `ghcr.io/goover/yolks_os:alpine`
 * [Debian 10 Buster](/oses/debian10)
-  * `ghcr.io/goover/yolks:debian10`
+  * `ghcr.io/goover/yolks_os:debian10`
 * [Debian 11 Bullseye](/oses/debian11)
-  * `ghcr.io/goover/yolks:debian11`  
+  * `ghcr.io/goover/yolks_os:debian11`  
 * [Ubuntu 18.04](/oses/ubuntu1804)
-  * `ghcr.io/goover/yolks:ubuntu1804`
+  * `ghcr.io/goover/yolks_os:ubuntu1804`
 * [Ubuntu 20.04](/oses/ubuntu2004)
-  * `ghcr.io/goover/yolks:ubuntu2004`  
-
+  * `ghcr.io/goover/yolks_os:ubuntu2004`  
+* [Ubuntu 22.04](/oses/ubuntu2204)
+  * `ghcr.io/goover/yolks_os:ubuntu2204`
 ### [Cassandra](/cassandra)
   * [`cassandra_java8_python27`](/cassandra/cassandra_java8_python2)
     * `ghcr.io/goover/yolks:cassandra_java8_python2`
