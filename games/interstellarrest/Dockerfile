@@ -1,7 +1,4 @@
-# ----------------------------------
-# Generic Wine 6 image
-# ----------------------------------
-FROM    ghcr.io/goover/yolks:debian11
+FROM    ghcr.io/goover/yolks_os:debian11
 
 LABEL   author="Torsten Widmann" maintainer="info@goover.de"
 
