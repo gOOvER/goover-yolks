@@ -1,6 +1,6 @@
 FROM         debian:bullseye-slim
 
-LABEL        author="Michael Parker" maintainer="parker@pterodactyl.io"
+LABEL        LABEL author="Torsten Widmann" maintainer="info@goover.de"
 
 LABEL        org.opencontainers.image.source="https://github.com/pterodactyl/yolks"
 LABEL        org.opencontainers.image.licenses=MIT

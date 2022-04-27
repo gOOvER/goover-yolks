@@ -1,12 +1,11 @@
 # ----------------------------------
 # Generic Wine 6 image
 # ----------------------------------
-FROM    ghcr.io/parkervcp/yolks:debian
+FROM    ghcr.io/goover/yolks:debian11
 
 LABEL   author="Torsten Widmann" maintainer="info@goover.de"
 
 ## install required packages
-RUN     dpkg --add-architecture i386
 RUN     apt update
 RUN     apt install -y --no-install-recommends --no-install-suggests gnupg2 software-properties-common libntlm0 winbind xvfb xauth python3 libncurses5:i386 libncurses6:i386 libgdiplus lib32gcc-s1
 

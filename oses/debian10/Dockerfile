@@ -1,6 +1,6 @@
 FROM debian:buster-slim
 
-LABEL author="Michael Parker" maintainer="parker@pterodactyl.io"
+LABEL author="Torsten Widmann" maintainer="info@goover.de"
 
 ENV DEBIAN_FRONTEND noninteractive
 

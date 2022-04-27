@@ -1,4 +1,4 @@
-FROM  ubuntu:18.04
+FROM  ubuntu:20.04
 
 LABEL author="Torsten Widmann" maintainer="info@goover.de"
 
@@ -19,6 +19,8 @@ RUN   apt install -y gcc g++ libgcc1 lib32gcc1 libc++-dev gdb libc6 git wget cur
 ## configure locale
 RUN   update-locale lang=en_US.UTF-8 \
  &&   dpkg-reconfigure --frontend noninteractive locales
+
+WORKDIR /home/container
 
 COPY  ./entrypoint.sh /entrypoint.sh
 CMD   ["/bin/bash", "/entrypoint.sh"]

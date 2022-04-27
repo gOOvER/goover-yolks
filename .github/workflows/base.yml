@@ -18,9 +18,11 @@ jobs:
       matrix:
         oses:
           - alpine
-          - debian
           - debian10
+          - debian11
           - ubuntu1804
+          - ubuntu2004
+          - ubuntu2204
     steps:
       - uses: actions/checkout@v2
       - uses: docker/setup-buildx-action@v1
