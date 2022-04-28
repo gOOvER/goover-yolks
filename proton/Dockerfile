@@ -9,7 +9,8 @@ ARG         DEBIAN_FRONTEND=noninteractive
 RUN         dpkg --add-architecture i386
 RUN         apt update 
 RUN         apt install -y --no-install-recommends gpg-agent software-properties-common apt-transport-https wget
-RUN     	apt install -y steam
+RUN     	wget https://steamcdn-a.akamaihd.net/client/installer/steam.deb
+RUN         apt install -y ./steam.deb
 
 USER        container
 ENV         USER=container HOME=/home/container
