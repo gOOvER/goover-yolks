@@ -40,8 +40,8 @@ fi
 echo "First launch will throw some errors. Ignore them"
 
 # install dotnet48 & vc2012
-winetricks -f vcrun2015
-winetricks -f mono
+winetricks -q --force vcrun2015
+winetricks -q --force dotnet48
 
 # Replace Startup Variables
 MODIFIED_STARTUP=$(echo ${STARTUP} | sed -e 's/{{/${/g' -e 's/}}/}/g')
