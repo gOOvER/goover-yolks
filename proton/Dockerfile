@@ -2,7 +2,7 @@ FROM        --platform=$BUILDPLATFORM debian:stable-slim
 
 LABEL       author="Torsten Widmann" maintainer="info@goover.de"
 # Setting up an alias to launch Steam easily.
-RUN         su proton -c "echo 'alias steam=\"/usr/games/steam\"' >> /home/container/.bashrc"
+#RUN         su proton -c "echo 'alias steam=\"/usr/games/steam\"' >> /home/container/.bashrc"
 
 ARG         DEBIAN_FRONTEND=noninteractive
 
