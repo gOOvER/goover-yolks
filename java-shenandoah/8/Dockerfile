@@ -1,4 +1,4 @@
-FROM        --platform=$TARGETOS/$TARGETARCH shipilev/openjdk-shenandoah:8
+FROM        shipilev/openjdk-shenandoah:8
 
 LABEL       author="Torsten Widmann" maintainer="info@goover.de"
 
