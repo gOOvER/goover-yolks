@@ -105,6 +105,8 @@ these images on an arm system, no modification to them or the tag is needed, the
     * `ghcr.io/goover/yolks:java_16`
   * [`Java 17`](/java/17)
     * `ghcr.io/goover/yolks:java_17`
+  * [`Java 18`](/java/18)
+    * `ghcr.io/goover/yolks:java_18`
 
 ### [MariaDB](/mariadb)
   * [`MariaDB 10.3`](/mariadb/10.3)
@@ -137,7 +139,7 @@ these images on an arm system, no modification to them or the tag is needed, the
     * `ghcr.io/goover/yolks:nodejs_16`
   * [`NodeJS 17`](/nodejs/17)
     * `ghcr.io/goover/yolks:nodejs_17`
-  * [`NodeJS 17`](/nodejs/18)
+  * [`NodeJS 18`](/nodejs/18)
     * `ghcr.io/goover/yolks:nodejs_18`  
 
 ### [PostgreSQL](/postgres)
