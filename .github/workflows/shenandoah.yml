@@ -18,8 +18,8 @@ jobs:
       matrix:
         tag:
           - 8
-          - 11
-          - 17
+          #- 11
+          #- 17
     steps:
       - uses: actions/checkout@v2
       - uses: docker/setup-qemu-action@v1
