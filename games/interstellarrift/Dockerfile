@@ -1,4 +1,4 @@
-FROM    ghcr.io/goover/yolks_os:debian11
+FROM    debian:bullseye-slim
 
 LABEL   author="Torsten Widmann" maintainer="info@goover.de"
 
