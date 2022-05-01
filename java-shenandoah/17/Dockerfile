@@ -1,4 +1,4 @@
-FROM        --platform=$TARGETOS/$TARGETARCH shipilev/openjdk-shenandoah:17
+FROM        shipilev/openjdk:17
 
 LABEL       author="Michael Parker" maintainer="parker@pterodactyl.io"
 
